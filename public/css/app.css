@@ -1,0 +1,182 @@
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth;;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    color: antiquewhite;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(47, 79, 79);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 8% auto;
+    max-width: 550px;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#add-icon, #distance-form-submit, #check-icon {
+    height: 28px;
+    width: 28px;
+}
+
+#check-icon-button {
+    background-color: transparent;
+    border: none;
+}
+
+#distance-form-submit {
+    margin: 20px auto 0 auto;
+}
+
+form, .card, .message-card, .no-shoes-card {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 30px 20px;
+    background-color: rgb(65, 111, 111);
+    border-radius: 15px;
+}
+
+.no-shoes-card {
+    background-color: transparent;
+    border: 1px solid antiquewhite;
+    margin: 50px auto;
+}
+
+.message-card {
+    background-color: antiquewhite;
+    color: rgb(65, 111, 111);
+}
+
+.card-update {
+    flex-direction: column;
+}
+
+.shoe-icon {
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+}
+
+.shoe-icon-update {
+    margin-right: 0;
+    height: 50px;
+    width: 50px;
+    margin: 20px auto;
+}
+
+.card-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.distance-display {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.distance-display-update {
+    margin-left: 0;
+}
+
+.distance-number, .distance-unit {
+    text-align: center;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-left: 2px antiquewhite solid;
+    padding-left: 10px;
+}
+
+#edit-icon {
+    margin-bottom: 5px;
+}
+
+.no-shoes-message {
+    line-height: 2rem;
+}
+
+#edit-icon-text {
+    vertical-align: text-top;
+}
+
+form {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#shoe-name-input, #shoe-type-input, #shoe-form-submit {
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    color: #222;
+    margin: 10px 0;
+}
+
+#shoe-name-input {
+    padding: 0 5px;
+    margin: 10px 0 30px 0;
+}
+
+#shoe-form-submit {
+    width: 50%;
+    margin: 0 auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#distance-input-label {
+    margin: 0 auto 10px auto;
+}
+
+#distance-input {
+    font-size: 44px;
+    width: 50%;
+    margin: 10px auto;
+    background-color: #222;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.delete-form {
+    padding: 0;
+    margin: 0;
+}
+
+#delete-button {
+    height: 20px;
+    width: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .container {
+        margin: 8%;
+    }
+}
