@@ -31,7 +31,7 @@ class ShoeController extends Controller
     public function update(Request $request, Shoe $shoe) {
         $newDistance = $request->input('distance');
         $shoe->update(['distance' => $newDistance]);
-        return redirect('/')->with('message', 'Miles updated for ' . $shoe->name);
+        return redirect('/')->with('message', 'Distance updated for ' . $shoe->name);
     }
 
     public function delete(Shoe $shoe) {
